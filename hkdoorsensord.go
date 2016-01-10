@@ -24,7 +24,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// Periodically toggle the switch's on characteristic
+	// Periodically toggle the contact sensor's state characteristic
 	go func() {
 		for {
 			var state model.ContactSensorStateType
